@@ -1,0 +1,22 @@
+# Assignment of each investigation code to a physical regime. This is OUR classification (decision D3 in docs/DECISIONS.md),
+# not a field in the NASA records. Different regimes are never pooled in comparisons or rankings.
+BASS: solid_spread
+BASS-II: solid_spread
+SAFFIRE-I: large_fire
+SAFFIRE-II: large_fire
+SAFFIRE-III: large_fire
+SAME: soot_smoke
+SAME-R: soot_smoke
+DAFT: soot_smoke
+DAFT-2: soot_smoke
+FLEX: droplet
+FLEX-2: droplet
+CFI: droplet
+ACME-BRE: gas_flame
+ACME-CFI-G: gas_flame
+ACME-E-FIELD: gas_flame
+ACME-FLAME-DESIGN: gas_flame
+ACME-CLD: gas_flame
+ACME-S-FLAME: gas_flame
+SPICE: soot_smoke
+SLICE: gas_flame

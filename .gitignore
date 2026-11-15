@@ -1,0 +1,10 @@
+db/flame.db
+.env
+__pycache__/
+*.pyc
+data/raw/*
+!data/raw/investigations.csv
+!data/raw/investigations.json
+.claude
+Dockerfile
+

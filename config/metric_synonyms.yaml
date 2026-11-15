@@ -1,0 +1,13 @@
+# Entries starting with 're:' are regular expressions (matched against the lowercase question, hyphens turned to spaces).
+# Phrases in a question -> metric code in the metrics table. Used to detect requests for numbers that may not be loaded.
+flame_spread_rate: ["spread rate", "flame spread", "spread speed", "how fast the flame", "flame speed"]
+burn_time: ["burn time", "burn duration", "how long it burned", "burning time", "re:how long (did|does|was|will).{0,30}(burn|burned|burning)"]
+flame_length: ["flame length"]
+flame_temperature: ["flame temperature", "peak temperature"]
+heat_release_rate: ["heat release", "flame power", "power output"]
+burn_rate_constant: ["burning rate constant", "burn rate constant", "burning rate"]
+extinction_diameter: ["extinction diameter"]
+limiting_oxygen: ["limiting oxygen", "oxygen limit", "flammability limit", "loi"]
+co_yield: ["co yield", "carbon monoxide yield"]
+smoke_point: ["smoke point"]
+soot_particle_size: ["soot particle", "particle size"]

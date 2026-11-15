@@ -1,0 +1,18 @@
+# Moon / Mars reference conditions used by the preset buttons in the UI.
+# Gravity nominals come from the challenge text (Moon about 1/6 g, Mars about 3/8 g).
+# Cabin atmosphere values (oxygen percent, total pressure) are NOT filled in: they must be copied
+# from an official NASA source and the source recorded here. Until then the presets filter by gravity only.
+moon:
+  label: "Moon-like"
+  gravity_class: lunar
+  gravity_g_nominal: 0.166
+  o2_pct: null          # TODO_CONFIRM from an official NASA source
+  pressure_kpa: null    # TODO_CONFIRM from an official NASA source
+  source: "TODO_CONFIRM"
+mars:
+  label: "Mars-like"
+  gravity_class: mars
+  gravity_g_nominal: 0.378
+  o2_pct: null          # TODO_CONFIRM
+  pressure_kpa: null    # TODO_CONFIRM
+  source: "TODO_CONFIRM"

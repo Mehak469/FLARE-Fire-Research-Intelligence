@@ -1,0 +1,7 @@
+# Product-design weights, NOT NASA coefficients. Ranking orders research evidence, not fire danger.
+weights:
+  condition_match: 0.40
+  evidence_strength: 0.30
+  outcome_availability: 0.20
+  applicability: 0.10
+evidence_saturation_runs: 50   # runs at which the run-count term saturates (ln(1+N)/ln(1+50))

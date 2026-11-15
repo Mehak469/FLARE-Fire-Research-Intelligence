@@ -1,0 +1,33 @@
+# Mapping for the PSI-25 (BASS-II) Experimental Table. Header names are matched case- and whitespace-insensitively.
+investigation: BASS-II
+source:
+  source_key: psi-25-experimental-table
+  type: psi_file
+  title: "PSI-25 BASS-II Experimental Table"
+  url: "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"
+  doi: "10.60555/4qc4-de67"
+run_label: "Test #"
+run_date: {col: "Date", parse: date_mdy}
+constants:
+  gravity_g: {value: 0.0, note: "ISS microgravity, from the investigation record; confirm on the PSI Description page"}
+conditions:
+  o2_pct: {col: "Calibrated initial O2 % by vol"}
+sample:
+  fuel_col: "Fuel Sample Material"
+  default_material: PMMA     # applied only when the text omits the material word, and always flagged
+  geometry: sheet
+attributes:
+  gmt_day_of_year: "GMT"
+  sample_id_text: "Sample #"
+  flow_restrictor: "Flow restrictor"
+  fan_display: "Fan display"
+  air_display: "Air display"
+  radiometer_gain: "Radiometer gain (1000 250 50 10)"
+  total_frames_shot: "Total Frames Shot"
+measurements:
+  - {metric: o2_final_pct,    col: "Calibrated final O2 % by vol", unit: pct}
+  - {metric: co2_initial_pct, col: "Initial CO2 % by vol",         unit: pct}
+  - {metric: co2_final_pct,   col: "Final CO2 % by vol",           unit: pct}
+  - {metric: co_initial_ppm,  col: "Initial CO (ppm)",             unit: ppm}
+  - {metric: co_final_ppm,    col: "Final CO (ppm)",               unit: ppm}
+required_for_check: ["Calibrated initial O2 % by vol", "Fuel Sample Material"]
